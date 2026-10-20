@@ -408,6 +408,6 @@ variable "restore_to_point_in_time" {
 
 variable "delete_automated_backups" {
   type        = bool
-  description = "Disable this to not deleet automated backups when deleting the DB instance."
+  description = "If `false`, keep automated backups after the DB instance is deleted. If `null`, use the provider default (`true`)"
   default     = null
 }
